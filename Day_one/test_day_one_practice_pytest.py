@@ -37,7 +37,8 @@ class Test2:
     def test_method6(self):
         print("Method 6 is called")
 
-#How to execute a fixture automatically on running any file
+
+# How to execute a fixture automatically on running any file
 class Test3:
     @pytest.fixture(autouse=True)  # fixtures default scope is always 'function'
     def FixtureMethod(self):
@@ -49,7 +50,8 @@ class Test3:
     def test_method2(self):
         print("Method 2 is called")
 
-#How to call fixture from a test method
+
+# How to call fixture from a test method
 class Test4:
     @pytest.fixture()
     def FixtureMethod(self):
@@ -61,7 +63,8 @@ class Test4:
     def test_method2(self):
         print("Method 2 is called")
 
-#how to run same test method for multiple set of test data
+
+# how to run same test method for multiple set of test data
 class Test5:
     @pytest.mark.parametrize('values', ["Hello", 'from', 'pytest'])
     def test_parameterized(self, values):
