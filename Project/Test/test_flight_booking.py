@@ -24,8 +24,6 @@ def wait_for_element(locator, timeout=10):
     return WebDriverWait(driver, timeout).until(EC.presence_of_element_located(locator))
 
 
-# driver = webdriver.Chrome(service=ChromeDriverManager().install())  # Ensure the path to ChromeDriver is in your PATH
-
 class Test_Flight:
 
     # Test Case 1.1: Verify that the page loads successfully
