@@ -38,7 +38,7 @@ class Test_Flight:
         print("One-way radio button is selected by default")
 
     # Test Case 2.2: Verify the functionality of the "Round-trip" radio button
-    def test_round_trip_selection(self):
+    def test_round_trip_selection(self, driver):
         round_trip_radio = driver.find_element(By.XPATH, "//input[@value='ROUNDTRIP']")
         round_trip_radio.click()
         return_date_field = wait_for_element((By.XPATH, "//input[@placeholder='Return Date']"))
