@@ -14,3 +14,5 @@ class Basepage:
         yield self.driver
         self.driver.close()
         self.driver.quit()
+
+
