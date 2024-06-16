@@ -3,9 +3,10 @@ import selenium
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
 
 
-class Basepage:
+class BasePage:
     @pytest.fixture(scope='function')
     def driver(self):
         self.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
@@ -14,5 +15,4 @@ class Basepage:
         yield self.driver
         self.driver.close()
         self.driver.quit()
-
-
+        self.driver.find_element(By.CSS_SELECTOR, "#name")

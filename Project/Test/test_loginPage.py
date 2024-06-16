@@ -1,2 +1,2 @@
-from Project.Pages.BasePage import Basepage
+from Project.Pages.BasePage import BasePage
 
