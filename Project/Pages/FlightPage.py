@@ -19,3 +19,6 @@ class FlightPage(BasePage):
     def Click_From(self):
         self.driver.find_element(By.XPATH, self.from_city_xpath).click()
 
+    def Enter_From_City(self, city="Mumbai"):
+        self.driver.find_element(By.XPATH, self.from_city_enter_text_xpath).send_keys(city)
+
