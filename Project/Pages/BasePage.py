@@ -16,3 +16,9 @@ class BasePage:
         self.driver.close()
         self.driver.quit()
         self.driver.find_element(By.CSS_SELECTOR, "#name")
+
+    def click(self, locator):
+        if str(locator).endswith('_xpath'):
+            self.driver.find_element(By.XPATH, locator).click()
+        elif str(locator).endswith('_css'):
+            self.driver.find_element(By.CSS_SELECTOR, locator).click()
