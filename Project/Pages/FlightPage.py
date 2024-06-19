@@ -22,3 +22,7 @@ class FlightPage(BasePage):
     def Enter_From_City(self, city="Mumbai"):
         self.driver.find_element(By.XPATH, self.from_city_enter_text_xpath).send_keys(city)
 
+    def Select_city_from_suggestion_list(self):
+        suggestion_list = self.driver.find_elements(By.XPATH, self.from_city_suggestions_xpath)
+        suggestion_list[0].click()
+
