@@ -20,8 +20,6 @@ def driver():
 
 
 # Function to wait for an element to be present
-def wait_for_element(locator, timeout=10):
-    return WebDriverWait(driver, timeout).until(EC.presence_of_element_located(locator))
 
 
 class Test_Flight:

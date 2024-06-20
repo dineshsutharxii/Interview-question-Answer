@@ -4,7 +4,8 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
-
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class BasePage:
     @pytest.fixture(scope='function')
@@ -18,7 +19,7 @@ class BasePage:
         self.driver.find_element(By.CSS_SELECTOR, "#name")
 
     def click(self, locator):
-        if str(locator).endswith('_xpath'):
-            self.driver.find_element(By.XPATH, locator).click()
-        elif str(locator).endswith('_css'):
-            self.driver.find_element(By.CSS_SELECTOR, locator).click()
+        self.driver.find_element(locator).click()
+
+    def wait_for_element(locator, timeout=10):
+        return WebDriverWait(driver, timeout).until(EC.presence_of_element_located(locator))
