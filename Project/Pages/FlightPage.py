@@ -14,6 +14,7 @@ class FlightPage(BasePage):
     from_city_xpath = (By.XPATH, "//label[@for='fromCity']")
     from_city_enter_text_xpath = (By.XPATH, "//input[@id='fromCity']")
     from_city_suggestions_xpath = (By.XPATH, "//ul[@role='listbox']/li")
+    view_price_xpath = (By.XPATH, "//span[contains(text(),'VIEW PRICES')]")
 
     def Click_Search(self):
         wait = WebDriverWait(self.driver, 10)
