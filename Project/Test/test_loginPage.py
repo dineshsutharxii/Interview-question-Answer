@@ -5,6 +5,7 @@ from Project.Pages.FlightPage import FlightPage as flightpage
 from Project.Pages.BasePage import BasePage
 
 
+@pytest.mark.parametrize('Locator', ['hello', 'hsjh', 'jhfks'])
 @pytest.fixture(scope="class")
 class Test_loginPage:
     # Test Case 2.1: Verify that the "One-way" radio button is selected by default
