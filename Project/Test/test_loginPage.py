@@ -1,9 +1,11 @@
+import pytest
 from selenium.webdriver.common.by import By
 from Project.Pages.FlightPage import FlightPage as flightpage
 
 from Project.Pages.BasePage import BasePage
 
 
+@pytest.fixture(scope="class")
 class Test_loginPage:
     # Test Case 2.1: Verify that the "One-way" radio button is selected by default
     # def test_one_way_selected(self, driver):
@@ -16,5 +18,3 @@ class Test_loginPage:
         flightpage.Enter_From_City("Delhi")
         flightpage.from_city_suggestions_xpath()
         flightpage.Click_Search()
-
-
