@@ -87,3 +87,6 @@ class pokemon(moveCharacter, jumpCharacter):
 
 poke = pokemon()
 poke.move_fwd()
+poke.jump_up()
+
+print(pokemon.mro())
