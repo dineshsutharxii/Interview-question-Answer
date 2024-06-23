@@ -1,3 +1,29 @@
+# Split Binary String
+# Chintu has a long binary string ‘str’. A binary string is a string that contains only 0 and 1. He considers a string ‘beautiful’ if and only if the number of 0's and 1's in the string are equal.
+# For example :
+# 0011 , 1100 , 101010 etc are beautiful strings whereas 1110, 0001,10101 etc are not beautiful strings.
+# Now Chintu wants to split the string into substrings such that each substring is beautiful. Can you help Chintu to find the maximum number of beautiful strings he can split the string into? If it is not possible to split the string in such a way that all strings are beautiful, return -1.
+# For example :
+# Let the given string be “101001” We will return 3 as we can divide the string into 3 beautiful strings “10” “10” and “01’.
+
+def solution(binary_str):
+    count_1, count_0, substring_count = 0, 0, 0
+    for ele in binary_str:
+        if int(ele) == 1:
+            count_1 += 1
+        else:
+            count_0 += 1
+        if count_1 == count_0:
+            substring_count += 1
+    if count_1 != count_0:
+        return -1
+    else:
+        return substring_count
+
+
+print(solution('1010'))
+print(solution('100001'))
+
 # find amx and Min in array
 
 # arr1 = [5, 6, 8, 12, 1, 5]
@@ -90,3 +116,21 @@ poke.move_fwd()
 poke.jump_up()
 
 print(pokemon.mro())
+# O/p - [<class '__main__.pokemon'>, <class '__main__.moveCharacter'>, <class '__main__.jumpCharacter'>, <class 'object'>]
+
+
+# Exception
+try:
+    print("Inside try block")
+    y = int(input("Enter denominator : "))
+    if y == 0:
+        raise Exception("Y is zero (0)")
+    print(5 / y)
+except Exception as e:
+    print(e)
+    print("Inside except block")
+else:
+    print("Inside else block with except")
+
+finally:
+    print("inside finally block")
