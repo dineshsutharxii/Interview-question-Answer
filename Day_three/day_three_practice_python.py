@@ -50,8 +50,40 @@ class Roi:
         self.interest = interest
 
     def cal_interest(self):
-        print('interest class level : ', self.amount * Roi.interest) # this class level variable
-        print('interest object level : ', self.amount * self.interest) # this Object level variable
+        print('interest class level : ', self.amount * Roi.interest)  # this class level variable
+        print('interest object level : ', self.amount * self.interest)  # this Object level variable
+
 
 cust1 = Roi("Diapk", 100000, 0.05)
 cust1.cal_interest()
+
+
+# MRO(Method resolution order) - search is done in current class, then the search continue into parent classes in depth-first,
+# left-right fashion without searching the same class twice
+
+class moveCharacter:
+    def move_fwd(self):
+        print("Move 1 step forward in moveCharacter")
+
+    def move_bwd(self):
+        print("Move 1 step backward")
+
+
+class jumpCharacter:
+    def jump_up(self):
+        print("Jump 1 step up")
+
+    def jump_down(self):
+        print("jump 1 step Down")
+
+    def move_fwd(self):
+        print("Move 1 step forward in jumpCharacter")
+
+
+class pokemon(moveCharacter, jumpCharacter):
+    def move_fwd(self):
+        print("Move 1 step forward in pokemon")
+
+
+poke = pokemon()
+poke.move_fwd()
