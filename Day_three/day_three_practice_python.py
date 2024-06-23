@@ -24,6 +24,27 @@ def solution(binary_str):
 print(solution('1010'))
 print(solution('100001'))
 
+
+# find the length of the smallest subarray(subarray is a contiguous part of an array/list) in a given array/list ‘ARR’ of size ‘N’ with its sum greater than a given value. If there is no such subarray return 0.
+# Example: Given an ‘ARR’: [1, 2, 21, 7, 6, 12] and a number ‘X’: 23. The length of the smallest subarray is 2 as the subarray is [21, 7].
+# Note: Here are multiple subarrays whose sum is greater than ‘X’ such as [1, 2, 21] or [7, 6, 12] but we have to choose the minimum length subarray.
+
+# naive
+def minSubArrayLen(arr, target):
+    currentSum = 0
+    minLength = 1000000000
+    for i in range(len(arr)):
+        currentSum = 0
+        for j in range(i, len(arr)):
+            currentSum += arr[j]
+            if currentSum > target:
+                minLength = min(minLength, j - i + 1)
+
+    return 0 if minLength == 1000000000 else minLength
+
+
+print(minSubArrayLen([1, 2, 21, 7, 6, 12], 10))
+
 # find amx and Min in array
 
 # arr1 = [5, 6, 8, 12, 1, 5]
