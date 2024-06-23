@@ -25,7 +25,7 @@
 #     count += 1
 # print("Size : ", count)
 
-#datetime
+# datetime
 import datetime
 
 current_date = datetime.datetime.today().date()
@@ -37,3 +37,21 @@ print(current_datetime)
 
 filename = current_datetime.strftime('%Y_%m_%d_%H_%M_%S_%f')
 print(filename)
+
+
+# class variable vs object variable
+
+class Roi:
+    interest = .08
+
+    def __init__(self, name, amount, interest):
+        self.name = name
+        self.amount = amount
+        self.interest = interest
+
+    def cal_interest(self):
+        print('interest class level : ', self.amount * Roi.interest) # this class level variable
+        print('interest object level : ', self.amount * self.interest) # this Object level variable
+
+cust1 = Roi("Diapk", 100000, 0.05)
+cust1.cal_interest()
