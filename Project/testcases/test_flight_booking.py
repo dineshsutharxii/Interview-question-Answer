@@ -24,18 +24,18 @@ def driver():
 
 class Test_Flight:
 
-    # Test Case 1.1: Verify that the page loads successfully
+    # testcases Case 1.1: Verify that the page loads successfully
     def test_page_loads(self, driver):
         assert "Goibibo" in driver.title
         print("Page loaded successfully")
 
-    # Test Case 2.1: Verify that the "One-way" radio button is selected by default
+    # testcases Case 2.1: Verify that the "One-way" radio button is selected by default
     def test_one_way_selected(self, driver):
         one_way_radio = driver.find_element(By.XPATH, "//*[@id='root']/div[3]/div/div/div[1]/ul/li[1]/span")
         assert one_way_radio.is_selected(), "One-way radio button is not selected by default"
         print("One-way radio button is selected by default")
 
-    # Test Case 2.2: Verify the functionality of the "Round-trip" radio button
+    # testcases Case 2.2: Verify the functionality of the "Round-trip" radio button
     def test_round_trip_selection(self, driver):
         round_trip_radio = driver.find_element(By.XPATH, "//input[@value='ROUNDTRIP']")
         round_trip_radio.click()
@@ -43,7 +43,7 @@ class Test_Flight:
         assert return_date_field.is_displayed(), "Return date field is not displayed"
         print("Round-trip radio button functionality verified")
 
-    # Test Case 3.1: Verify the "From" and "To" input fields
+    # testcases Case 3.1: Verify the "From" and "To" input fields
     def test_from_to_fields(self):
         from_field = driver.find_element(By.XPATH, "//input[@placeholder='From']")
         to_field = driver.find_element(By.XPATH, "//input[@placeholder='To']")
@@ -53,7 +53,7 @@ class Test_Flight:
         assert suggestion.is_displayed(), "Valid suggestions are not appearing"
         print("From and To fields are working with suggestions")
 
-    # Test Case 4.1: Verify the "Departure" date picker
+    # testcases Case 4.1: Verify the "Departure" date picker
     def test_departure_date_picker(self):
         departure_date_field = driver.find_element(By.XPATH, "//input[@placeholder='Departure Date']")
         departure_date_field.click()
@@ -64,7 +64,7 @@ class Test_Flight:
         assert selected_date, "Departure date is not selected"
         print("Departure date picker functionality verified")
 
-    # Test Case 5.1: Verify the "Travellers & Class" dropdown
+    # testcases Case 5.1: Verify the "Travellers & Class" dropdown
     def test_travellers_class_dropdown(self):
         travellers_class_dropdown = driver.find_element(By.XPATH, "//input[@placeholder='Travellers & Class']")
         travellers_class_dropdown.click()
@@ -74,7 +74,7 @@ class Test_Flight:
         assert selected_adults == "2", "Travellers & Class dropdown is not working"
         print("Travellers & Class dropdown functionality verified")
 
-    # Test Case 6.1: Verify the "Special Fares" checkboxes
+    # testcases Case 6.1: Verify the "Special Fares" checkboxes
     def test_special_fares_checkboxes(self):
         special_fares = [
             "//label[contains(text(), 'Student')]/preceding-sibling::input",
@@ -90,7 +90,7 @@ class Test_Flight:
             assert not checkbox.is_selected(), "Special fare checkbox is not deselectable"
         print("Special fares checkboxes functionality verified")
 
-    # Test Case 7.1: Verify the "Search Flights" button functionality
+    # testcases Case 7.1: Verify the "Search Flights" button functionality
     def test_search_flights_button(self):
         from_field = driver.find_element(By.XPATH, "//input[@placeholder='From']")
         to_field = driver.find_element(By.XPATH, "//input[@placeholder='To']")
