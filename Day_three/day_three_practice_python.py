@@ -45,6 +45,24 @@ def minSubArrayLen(arr, target):
 
 print(minSubArrayLen([1, 2, 21, 7, 6, 12], 10))
 
+# Python Program to Check if Two Strings are Anagram
+# Python3 program for the above approach
+from collections import Counter
+
+
+def check(s1, s2):
+    # implementing counter function
+    if Counter(s1) == Counter(s2):
+        print("The strings are anagrams.")
+    else:
+        print("The strings aren't anagrams.")
+
+
+# driver code
+s1 = "listen"
+s2 = "silent"
+check(s1, s2)
+
 # find amx and Min in array
 
 # arr1 = [5, 6, 8, 12, 1, 5]
