@@ -1,6 +1,6 @@
 import pytest
 from selenium.webdriver.common.by import By
-from Project.pages.FlightPage import FlightPage as flightpage
+from Project.pages.fligh_search_page import FlightPage as flightpage
 
 from Project.pages.BasePage import BasePage
 
