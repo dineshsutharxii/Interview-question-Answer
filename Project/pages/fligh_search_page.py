@@ -56,33 +56,24 @@ class FlightSearchPage:
         to_loc.click()
         to_city_enter_text = self.wait.until(EC.visibility_of_element_located(self.to_city_enter_text_xpath))
         to_city_enter_text.send_keys(to_location)
+        time.sleep(2)
         click_first_suggestion = self.wait.until(EC.element_to_be_clickable(self.city_suggestions_xpath))
         click_first_suggestion.click()
 
     def select_date_departure(self, date):
         try:
-            self.driver.find_element(self.date_container)
+            delete = (self.date_container)
+            print(delete)
+            departure = self.wait.until(EC.visibility_of_element_located(self.date_container))
+            departure.is_displayed()
         except Exception as e:
             print(f"Date container is not found : {e}")
-            self.driver.find_element(self.departure_element).click()
-        select_date = self.driver.find_element(self.departure_date(date))
+            departure = self.wait.until(EC.visibility_of_element_located(self.departure_element))
+            departure.click()
+        deleteit = self.departure_date(date)
+        select_date = self.wait.until(EC.visibility_of_element_located(self.departure_date(date)))
         select_date.click()
 
-    def Click_Search(self):
-        wait = WebDriverWait(self.driver, 10)
-        try:
-            element = wait.until(EC.element_to_be_clickable(self.SEARCH_BUTTON))
-            element.click()
-        except Exception as e:
-            print("The error is : ", e)
-
-    def Click_From(self):
-        self.driver.find_element(By.XPATH, self.from_city_xpath).click()
-
-    def Enter_From_City(self, city="Mumbai"):
-        self.driver.find_element(By.XPATH, self.from_city_enter_text_xpath).clear()
-        self.driver.find_element(By.XPATH, self.from_city_enter_text_xpath).send_keys(city)
-
-    def Select_city_from_suggestion_list(self):
-        suggestion_list = self.driver.find_elements(By.XPATH, self.from_city_suggestions_xpath)
-        suggestion_list[0].click()
+    def click_search(self):
+        element = self.wait.until(EC.element_to_be_clickable(self.SEARCH_BUTTON))
+        element.click()

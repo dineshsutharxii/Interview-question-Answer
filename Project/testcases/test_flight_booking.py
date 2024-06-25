@@ -16,6 +16,8 @@ class TestSearchFlightAndVerifyResults:
         fs = FlightSearchPage(self.driver, self.wait)
         fs.enter_from_location("Mumbai")
         fs.enter_to_location("New Delhi")
+        fs.select_date_departure("Sun Jul 07 2024")
+        fs.click_search()
         time.sleep(2)
 
 #
