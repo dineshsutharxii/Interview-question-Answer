@@ -1,3 +1,5 @@
+import time
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -7,12 +9,14 @@ from webdriver_manager.chrome import ChromeDriverManager
 import pytest
 from Project.pages.fligh_search_page import FlightSearchPage
 
+
 @pytest.mark.usefixtures("setup")
 class TestSearchFlightAndVerifyResults:
     def test_search_flight(self):
         fs = FlightSearchPage(self.driver, self.wait)
-        fs.from_location("Mumbai")
-        fs.to_location("New Delhi")
+        fs.enter_from_location("Mumbai")
+        fs.enter_to_location("New Delhi")
+        time.sleep(2)
 
 #
 # # Setup
