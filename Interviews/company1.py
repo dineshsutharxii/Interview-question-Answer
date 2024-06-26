@@ -17,17 +17,23 @@
 #     username_field = driver.find_element(By.Id, "#username")
 # username_field.send_keys(sheet[])
 #
-# str1 = 'user1&frst+Last+datetime'
-# #split above string and store in list one by one
-# datas = []
-# for ele in str1:
-#     if (ord(ele) <= ord(z) and ord(ele) >= ord(a)) or (ord(ele) <= ord(Z) and ord(ele) >= ord(A)) or (
-#             ord(ele) <= ord(0) and ord(ele) >= ord(9)):
-#         char += ele
-#     else:
-#         datas.append()
-#         char = ""
-#
+str1 = 'user1&frst+Last+datetime'
+#split above string and store in list one by one
+datas = []
+char = ""
+for ele in str1:
+    if (ord(ele) <= ord('z') and ord(ele) >= ord('a')) or (ord(ele) <= ord('Z') and ord(ele) >= ord('A')) or (
+            ord(ele) >= ord('0') and ord(ele) <= ord('9')):
+        char += ele
+    else:
+        datas.append(char)
+        char = ""
+print(datas)
+#regex
+import re
+pattern = r'[\&\+\s]+'
+list1 = re.split(pattern, str1)
+print(list1)
 # #table -> dynamic rows -> in one cell dropdown is there -> find count of options in dropdown
 # table-> no
 # of
