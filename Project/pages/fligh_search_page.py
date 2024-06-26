@@ -62,8 +62,6 @@ class FlightSearchPage:
 
     def select_date_departure(self, date):
         try:
-            delete = (self.date_container)
-            print(delete)
             departure = self.wait.until(EC.visibility_of_element_located(self.date_container))
             departure.is_displayed()
         except Exception as e:
