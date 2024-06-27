@@ -7,8 +7,7 @@
 # successful
 #
 # driver = webdriver.chrome()
-# driver.get("https" // google.com
-# ")
+# driver.get("https://google.com")
 #
 # wb = openpyxl.open("file location")
 # sheet = wb.worksheet["data"]
@@ -34,14 +33,6 @@ import re
 pattern = r'[\&\+\s]+'
 list1 = re.split(pattern, str1)
 print(list1)
+
 # #table -> dynamic rows -> in one cell dropdown is there -> find count of options in dropdown
-# table-> no
-# of
-# rows(using
-# tr
-# tag) and column(using
-# td
-# tag)
-#
-#
-#
+
