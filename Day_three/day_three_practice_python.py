@@ -173,3 +173,33 @@ else:
 
 finally:
     print("inside finally block")
+
+
+# Indexes of Subarray Sum Input: arr[] = {1,2,3,7,5}, n = 5, s = 12 Output: 2 4
+# Explanation: The sum of elements from 2nd to 4th position is 12.
+# Given an unsorted array arr of size n that contains only non negative integers,
+# find a sub-array (continuous elements) that has sum equal to s. You mainly need to
+# return the left and right indexes(1-based indexing) of that subarray.
+# In case of multiple subarrays, return the subarray indexes which come first on moving
+# from left to right. If no such subarray exists return an array consisting of element -1.
+# Expected Time Complexity: O(n)
+# Expected Auxiliary Space: O(1)
+
+def checkSubarraySum(arr1, expected_sum):
+    start, end, sum1, n = 0, 0, 0, len(arr1)
+    while end < n:
+        sum1 += arr1[end]
+        while sum1 > expected_sum and start < end:
+            sum1 -= arr1[start]
+            start += 1
+
+        if sum1 == expected_sum:
+            print("Sum found between indexes % d and % d" % (start, end))
+            return 1
+        end += 1
+    print("No subarray found")
+    return -1
+
+arr1 = [1, 2, 3, 7, 5]
+expected_sum = 12
+checkSubarraySum(arr1, expected_sum)
