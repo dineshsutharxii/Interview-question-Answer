@@ -16,14 +16,14 @@ class FlightSearchPage:
         # locator
         # from city
         self.SEARCH_BUTTON = (By.XPATH, "//input[@value='Search Flights']")
-        self.depart_city_xpath = (By.XPATH, "//label[@for='BE_flight_origin_city']")
+        self.depart_city_xpath = (By.XPATH, "//input[@id='BE_flight_origin_city']")
         # self.from_city_enter_text_xpath = (By.XPATH, "//input[@placeholder='From']")
         self.city_suggestions_xpath = (By.XPATH, "//div[@class='viewport']//div[1]/li")
-        self.view_price_xpath = (By.XPATH, "//span[contains(text(),'VIEW PRICES')]")
+        # self.view_price_xpath = (By.XPATH, "//span[contains(text(),'VIEW PRICES')]")
 
         # to city
-        self.to_city_xpath = (By.XPATH, "//label[@for='toCity']")
-        self.to_city_enter_text_xpath = (By.XPATH, "//input[@placeholder='To']")
+        self.to_city_xpath = (By.XPATH, "//input[@id='BE_flight_arrival_city']")
+        # self.to_city_enter_text_xpath = (By.XPATH, "//input[@placeholder='To']")
 
         # departure element
         self.departure_element = (By.XPATH, "//label[@for='departure']")
@@ -45,8 +45,9 @@ class FlightSearchPage:
     def enter_from_location(self, from_location):
         from_loc = self.wait.until(EC.element_to_be_clickable(self.depart_city_xpath))
         from_loc.click()
-        from_city_enter_text = self.wait.until(EC.visibility_of_element_located(self.from_city_enter_text_xpath))
-        from_city_enter_text.send_keys(from_location)
+        from_loc = self.wait.until(EC.element_to_be_clickable(self.depart_city_xpath))
+        # from_city_enter_text = self.wait.until(EC.visibility_of_element_located(self.from_city_enter_text_xpath))
+        from_loc.send_keys(from_location)
         click_first_suggestion = self.wait.until(EC.element_to_be_clickable(self.city_suggestions_xpath))
         click_first_suggestion.click()
 
