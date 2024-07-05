@@ -203,3 +203,11 @@ def checkSubarraySum(arr1, expected_sum):
 arr1 = [1, 2, 3, 7, 5]
 expected_sum = 12
 checkSubarraySum(arr1, expected_sum)
+
+
+# find length of string without using any builtins methods
+str1 = "Dipak Singh"
+str1_len = 0
+for ele in str1:
+    str1_len +=1
+print("Length : " + str(str1_len))
