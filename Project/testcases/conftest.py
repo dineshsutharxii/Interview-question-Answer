@@ -12,11 +12,6 @@ def setup(request):
     chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
     service_obj = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(options=chrome_options, service=service_obj)
-
-    # chrome_options.add_argument("--disable-automation")
-    # chrome_options.add_argument('start-maximized')
-    # chrome_options.add_argument('disable-infobars')
-    # driver = webdriver.Chrome(options=chrome_options, executable_path=ChromeDriverManager().install())
     wait = WebDriverWait(driver, 10)
     driver.get("https://www.yatra.com/")
     driver.maximize_window()

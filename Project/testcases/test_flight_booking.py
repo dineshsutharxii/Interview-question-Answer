@@ -14,9 +14,9 @@ from Project.pages.fligh_search_page import FlightSearchPage
 class TestSearchFlightAndVerifyResults:
     def test_search_flight(self):
         fs = FlightSearchPage(self.driver, self.wait)
-        fs.enter_from_location("Mumbai")
+        fs.enter_from_location("Bangalore")
         fs.enter_to_location("New Delhi")
-        fs.select_date_departure("Sun Jul 07 2024")
+        fs.select_date_departure("17/07/2024")
         fs.click_search()
         time.sleep(2)
 

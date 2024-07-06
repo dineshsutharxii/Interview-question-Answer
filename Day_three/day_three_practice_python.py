@@ -209,5 +209,5 @@ checkSubarraySum(arr1, expected_sum)
 str1 = "Dipak Singh"
 str1_len = 0
 for ele in str1:
-    str1_len +=1
+    str1_len += 1
 print("Length : " + str(str1_len))
