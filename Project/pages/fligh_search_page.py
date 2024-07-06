@@ -17,6 +17,7 @@ class FlightSearchPage:
         # locator
         # from city
         self.depart_city_xpath = (By.XPATH, "//input[@id='BE_flight_origin_city']")
+        self.select_city_from_suggestion = (By.XPATH, "//div[@class ='viewport']//li[1]")
 
         # to city
         self.to_city_xpath = (By.XPATH, "//input[@id='BE_flight_arrival_city']")
@@ -40,14 +41,17 @@ class FlightSearchPage:
     def enter_from_location(self, from_location):
         from_loc = self.wait.until(EC.element_to_be_clickable(self.depart_city_xpath))
         from_loc.click()
+        from_loc = self.wait.until(EC.element_to_be_clickable(self.depart_city_xpath))
         from_loc.send_keys(from_location)
-        from_loc.send_keys(Keys.ENTER)
+        select_depart_loc = self.wait.until(EC.element_to_be_clickable(self.select_city_from_suggestion))
+        select_depart_loc.click()
 
     def enter_to_location(self, to_location):
         to_loc = self.wait.until(EC.element_to_be_clickable(self.to_city_xpath))
         to_loc.click()
         to_loc.send_keys(to_location)
-        to_loc.send_keys(Keys.ENTER)
+        select_depart_loc = self.wait.until(EC.element_to_be_clickable(self.select_city_from_suggestion))
+        select_depart_loc.click()
 
     def select_date_departure(self, date):
         try:

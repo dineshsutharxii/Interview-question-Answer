@@ -8,6 +8,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 @pytest.fixture(scope="class")
 def setup(request):
     chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument("--start-maximized")
+    prefs = {"profile.default_content_setting_values.notifications": 2}
+    chrome_options.add_experimental_option("prefs", prefs)
     chrome_options.add_experimental_option("useAutomationExtension", False)
     chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
     service_obj = Service(ChromeDriverManager().install())
