@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 import pytest
-from Project.pages.fligh_search_page import FlightSearchPage
+from Project.pages.flight_search_page import FlightSearchPage
 
 
 @pytest.mark.usefixtures("setup")

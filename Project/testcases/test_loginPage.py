@@ -1,8 +1,8 @@
 import pytest
 from selenium.webdriver.common.by import By
-from Project.pages.fligh_search_page import FlightPage as flightpage
+from Project.pages.flight_search_page import FlightSearchPage as flightpage
 
-from Project.pages.BasePage import BasePage
+# from Project.pages.BasePage import BasePage
 
 
 @pytest.mark.parametrize('Locator', ['hello', 'hsjh', 'jhfks'])
