@@ -35,7 +35,7 @@ class FlightSearchPage:
         # departure date
         # self.departure_date = lambda date: (By.XPATH, "//div[@aria-label='" + str(date) + "']")
         self.departure_date = (By.XPATH, "//input[@id='BE_flight_origin_date']")
-        self.select_departure_date = lambda date: (By.XPATH, "//*[@id=" + date + "]")
+        self.select_departure_date = lambda date: (By.XPATH, "//*[@id='" + date + "']")
 
     # Methods below this only
     def enter_from_location(self, from_location):
@@ -61,6 +61,7 @@ class FlightSearchPage:
             print(f"Date container is not found : {e}")
             departure = self.wait.until(EC.visibility_of_element_located(self.departure_element))
         departure.click()
+        print(self.select_departure_date(date))
         select_date = self.wait.until(EC.visibility_of_element_located(self.select_departure_date(date)))
         select_date.click()
 
