@@ -211,3 +211,17 @@ str1_len = 0
 for ele in str1:
     str1_len += 1
 print("Length : " + str(str1_len))
+
+#logging in Python
+# DEBUG - Detailed information, typically of interest only when diagnosing problems.
+# INFO - Confirmation that things are working as expected.
+# WARNING - An indication that something unexpected happened, or indicative of some problem in the near future (e.g. ‘disk space low’). The software is still working as expected.
+# ERROR - Due to a more serious problem, the software has not been able to perform some function.
+# CRITICAL - A serious error, indicating that the program itself may be unable to continue running.
+import logging
+# logging.warning("Warning Log")
+logging.basicConfig(level=logging.DEBUG, filename='..\Project\Logs\logs.log', filemode="a")
+logging.debug('This message should go to the log file')
+logging.info('So should this')
+logging.warning('And this, too')
+logging.error('And non-ASCII stuff, too, like Øresund and Malmö')
