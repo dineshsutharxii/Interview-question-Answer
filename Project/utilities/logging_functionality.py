@@ -2,35 +2,35 @@ import logging
 
 
 class Logging:
-    def logging_log(self, level = logging.DEBUG):
-        # logger = logging.getLogger(__name__)
-        # logger.setLevel(level)
-        console_handler = logging.StreamHandler()
-        file_handler = logging.FileHandler('..\Logs\logs.txt')
+    def __init__(self):
+        self.file_formatter = None
+        self.console_formatter = None
+        self.logger = None
+        self.file_handler = None
+        self.console_handler = None
 
-        logging.basicConfig(level=level,
-                            format="%(asctime)s - %(levelname)s %(name)s: " + "Line: " + "%(lineno)d - %(message)s",
-                            handlers=[console_handler, file_handler], datefmt="%Y-%m-%d %H:%M:%S")
+    def logs(self):
+        self.logger = logging.getLogger("demologs")
+        self.logger.setLevel(logging.DEBUG)
+        self.console_handler = logging.StreamHandler()  # Handler for console
+        self.console_handler.setLevel(logging.CRITICAL)  # setLevel to handler
+        self.file_handler = logging.FileHandler('..\Logs\logs.txt')  # Handler for file
+        self.file_handler.setLevel(logging.DEBUG)  # setLevel to handler
+        self.console_formatter = logging.Formatter(fmt='%(filename)s - %(asctime)s - %(message)s',
+                                                   datefmt='%d-%m-%Y %H:%M:%S')
+        self.file_formatter = logging.Formatter(fmt='%(filename)s - %(asctime)s - %(message)s',
+                                                datefmt='%d-%m-%Y %H:%M:%S')
+        self.console_handler.setFormatter(self.console_formatter)  # add Formatter to handler
+        self.file_handler.setFormatter(self.file_formatter)  # add Formatter to handler
+        self.logger.addHandler(self.console_handler)  # added handler to logger
+        self.logger.addHandler(self.file_handler)  # added handler to logger
 
-        # logger.setLevel(level=logging.DEBUG)
-        # Create handler (Console or file handler)
-        # formater
-        # console_formatter = logging.Formatter('%(filename)s - %(asctime)s - %(message)s',
-        #                                       datefmt='%Y-%m-%d %H:%M:%S,uuu')
-        file_formatter = logging.Formatter('%(filename)s : %(asctime)s : %(message)s')
-        #setFormatter
-        # console_handler.setFormatter(console_formatter)
-        file_handler.setFormatter(file_formatter)
-        # add handler to logger
-        # logger.addHandler(console_handler)
-        # logger.addHandler(file_handler)
-        #
-        logging.debug('Debug level - This message should go to the log file')
-        logging.info('Info : So should this')
-        logging.warning('Warning : And this, too')
-        logging.error('Error : And non-ASCII stuff, too, like Øresund and Malmö')
-        logging.critical("Critical: its critical error")
+        self.logger.debug('Debug level - This message should go to the log file')
+        self.logger.info('Info : So should this')
+        self.logger.warning('Warning : And this, too')
+        self.logger.error('Error : And non-ASCII stuff, too, like Øresund and Malmö')
+        self.logger.critical("Critical: its critical error")
 
 
 test_log = Logging()
-test_log.logging_log()
+test_log.logs()
