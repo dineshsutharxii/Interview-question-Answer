@@ -11,6 +11,7 @@ list_test.insert(2, 7)
 list_test.extend(list2)
 print(list_test)
 
+
 # Make dict of string key and int value and extract keys and values in two different lists
 dict_test = {'one': 1, "two": "2", "three": 3, "four": "4"}
 key = dict_test.keys()
@@ -35,3 +36,14 @@ for i in range(len1):
             new_list[i], new_list[j] = new_list[j], new_list[i]
 
 print(new_list)
+list1 = [[1, 2, 3], [4, 5], [6, 7, 8, 9, 10]]
+print([num for sublist in list1 for num in sublist])
+
+from Project.utilities.logging_utility import Utility
+import logging
+
+log = Utility().custom_logger()
+log.warning("From warning log")
+
+excel = Utility().read_excel(r'C:\Users\dines\Learn And Interview\Interview_question_answer\Day_two\data.xlsx', 'Sheet1')
+print(excel)
