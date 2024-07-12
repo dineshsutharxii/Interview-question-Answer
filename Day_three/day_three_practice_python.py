@@ -223,7 +223,8 @@ import logging
 # logging.warning("Warning Log")
 # logging.basicConfig(level=logging.DEBUG, filename='..\Project\Logs\log_at_' + str(filename) + '.log', filemode="a")
 # logging.basicConfig(format= '%(levelname)s:%(message)s',level=logging.DEBUG, filename='..\Project\Logs\logs.log', filemode="a")
-logging.basicConfig(format= '%(filename)s - %(asctime)s - %(message)s',level=logging.DEBUG, filename='..\Project\Logs\logs.log', filemode="a")
+logging.basicConfig(format='%(filename)s - %(asctime)s - %(message)s', level=logging.DEBUG,
+                    filename='..\Project\Logs\logs.log', filemode="a")
 
 logging.debug('Debug level - This message should go to the log file')
 logging.info('Info : So should this')
