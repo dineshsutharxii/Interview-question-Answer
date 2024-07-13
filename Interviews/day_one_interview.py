@@ -39,11 +39,27 @@ print(new_list)
 list1 = [[1, 2, 3], [4, 5], [6, 7, 8, 9, 10]]
 print([num for sublist in list1 for num in sublist])
 
-from Project.utilities.logging_utility import Utility
+from Project.utilities.Utility import Utility
 import logging
 
 log = Utility().custom_logger()
 log.warning("From warning log")
 
-excel = Utility().read_excel(r'C:\Users\dines\Learn And Interview\Interview_question_answer\Day_two\data.xlsx', 'Sheet1')
-print(excel)
+execution_list = Utility().read_excel(r'C:\Users\dines\Learn And Interview\Interview_question_answer\Project\SuiteFiles\ExecutionList.xlsx', 'ExecutionList')
+modules_to_be_execute = []
+for modules in execution_list:
+    if modules[0] == 'Y':
+        modules_to_be_execute.append(modules)
+if len(modules_to_be_execute) < 1:
+    log.info("No Module is selected in ExecutionList to execute")
+else:
+    for module in modules_to_be_execute:
+        testcases_to_be_execute = []
+        testcase_list = Utility().read_excel(r'C:\Users\dines\Learn And Interview\Interview_question_answer\Project\SuiteFiles\S'+str(module[1])+'.xlsx', str(module[1]))
+        testcase_data_list = Utility().read_excel(r'C:\Users\dines\Learn And Interview\Interview_question_answer\Project\SuiteFiles\S'+str(module[1])+'.xlsx', "TestData")
+        for testcase in testcase_list:
+            if testcase[1] == 'Y':
+                testcases_to_be_execute.append(testcase)
+        print(testcases_to_be_execute)
+
+print(execution_list)
