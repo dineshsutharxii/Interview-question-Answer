@@ -12,10 +12,13 @@ from Project.pages.flight_search_page import FlightSearchPage
 
 @pytest.mark.usefixtures("setup")
 class TestSearchFlightAndVerifyResults:
-    def test_search_flight(self):
+    def __init__(self):
+        pytest.fixture(scope="class", autouse=True)(self.setup)()
+
+    def test_search_flight(self, from_lo, to_loc):
         fs = FlightSearchPage(self.driver, self.wait)
-        fs.enter_from_location("Bangalore")
-        fs.enter_to_location("Chennai")
+        fs.enter_from_location(from_lo)
+        fs.enter_to_location(to_loc)
         fs.select_date_departure("17/07/2024")
         fs.click_search()
         time.sleep(2)
