@@ -8,12 +8,14 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 import pytest
 from Project.pages.flight_search_page import FlightSearchPage
+from Project.testcases.conftest import setup
 
 
 @pytest.mark.usefixtures("setup")
 class TestSearchFlightAndVerifyResults:
     def __init__(self):
-        pytest.fixture(scope="class", autouse=True)(self.setup)()
+        self.driver = setup()
+        # self.driver = pytest.fixture(scope="class", autouse=True)(self.setup)()
 
     def test_search_flight(self, from_lo, to_loc):
         fs = FlightSearchPage(self.driver, self.wait)

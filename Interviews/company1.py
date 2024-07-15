@@ -40,3 +40,8 @@ import logging
 # from Project.utilities.logging_functionality import Logging
 #
 # Logging.logging_log(logging.DEBUG)
+
+from Project.testcases.conftest import ConfTest
+
+conf = ConfTest()
+conf.setup()
