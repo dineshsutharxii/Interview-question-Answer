@@ -1,0 +1,9 @@
+day_three_practice_python.py - 2024-07-09 19:44:24,878 - Debug level - This message should go to the log file
+day_three_practice_python.py - 2024-07-09 19:44:24,878 - Info : So should this
+day_three_practice_python.py - 2024-07-09 19:44:24,878 - Warning : And this, too
+day_three_practice_python.py - 2024-07-09 19:44:24,878 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:07:58,498 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-10 20:07:58,506 : Info : So should this
+logging_functionality.py : 2024-07-10 20:07:58,506 : Warning : And this, too
+logging_functionality.py : 2024-07-10 20:07:58,506 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:07:58,506 : Critical: its critical error

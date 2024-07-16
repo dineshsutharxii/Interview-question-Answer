@@ -1,0 +1,236 @@
+logging_functionality.py : 2024-07-10 20:13:00,427 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-10 20:13:00,429 : Info : So should this
+logging_functionality.py : 2024-07-10 20:13:00,429 : Warning : And this, too
+logging_functionality.py : 2024-07-10 20:13:00,429 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:13:00,429 : Critical: its critical error
+logging_functionality.py : 2024-07-10 20:14:48,889 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-10 20:14:48,889 : Info : So should this
+logging_functionality.py : 2024-07-10 20:14:48,889 : Warning : And this, too
+logging_functionality.py : 2024-07-10 20:14:48,889 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:14:48,894 : Critical: its critical error
+logging_functionality.py : 2024-07-10 20:15:37,639 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-10 20:15:37,639 : Info : So should this
+logging_functionality.py : 2024-07-10 20:15:37,639 : Warning : And this, too
+logging_functionality.py : 2024-07-10 20:15:37,639 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:15:37,639 : Critical: its critical error
+logging_functionality.py : 2024-07-10 20:16:26,218 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-10 20:16:26,218 : Info : So should this
+logging_functionality.py : 2024-07-10 20:16:26,220 : Warning : And this, too
+logging_functionality.py : 2024-07-10 20:16:26,220 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:16:26,220 : Critical: its critical error
+logging_functionality.py : 2024-07-10 20:32:54,198 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-10 20:32:54,198 : Info : So should this
+logging_functionality.py : 2024-07-10 20:32:54,198 : Warning : And this, too
+logging_functionality.py : 2024-07-10 20:32:54,198 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:32:54,199 : Critical: its critical error
+logging_functionality.py : 2024-07-10 20:33:16,797 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-10 20:33:16,797 : Info : So should this
+logging_functionality.py : 2024-07-10 20:33:16,797 : Warning : And this, too
+logging_functionality.py : 2024-07-10 20:33:16,797 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:33:16,797 : Critical: its critical error
+logging_functionality.py : 2024-07-10 20:33:29,503 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-10 20:33:29,503 : Info : So should this
+logging_functionality.py : 2024-07-10 20:33:29,503 : Warning : And this, too
+logging_functionality.py : 2024-07-10 20:33:29,503 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:33:29,503 : Critical: its critical error
+logging_functionality.py : 2024-07-10 20:35:03,847 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-10 20:35:03,847 : Info : So should this
+logging_functionality.py : 2024-07-10 20:35:03,847 : Warning : And this, too
+logging_functionality.py : 2024-07-10 20:35:03,847 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:35:03,847 : Critical: its critical error
+logging_functionality.py : 2024-07-10 20:37:15,763 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-10 20:37:15,763 : Info : So should this
+logging_functionality.py : 2024-07-10 20:37:15,763 : Warning : And this, too
+logging_functionality.py : 2024-07-10 20:37:15,763 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:37:15,763 : Critical: its critical error
+logging_functionality.py : 2024-07-10 20:38:41,481 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-10 20:38:41,492 : Info : So should this
+logging_functionality.py : 2024-07-10 20:38:41,492 : Warning : And this, too
+logging_functionality.py : 2024-07-10 20:38:41,492 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:38:41,492 : Critical: its critical error
+logging_functionality.py : 2024-07-10 20:39:17,671 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-10 20:39:17,671 : Info : So should this
+logging_functionality.py : 2024-07-10 20:39:17,671 : Warning : And this, too
+logging_functionality.py : 2024-07-10 20:39:17,671 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:39:17,671 : Critical: its critical error
+logging_functionality.py : 2024-07-10 20:39:55,358 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-10 20:39:55,358 : Info : So should this
+logging_functionality.py : 2024-07-10 20:39:55,358 : Warning : And this, too
+logging_functionality.py : 2024-07-10 20:39:55,358 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:39:55,358 : Critical: its critical error
+logging_functionality.py : 2024-07-10 20:40:48,789 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-10 20:40:48,789 : Info : So should this
+logging_functionality.py : 2024-07-10 20:40:48,789 : Warning : And this, too
+logging_functionality.py : 2024-07-10 20:40:48,789 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:40:48,789 : Critical: its critical error
+logging_functionality.py : 2024-07-10 20:41:16,521 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-10 20:41:16,521 : Info : So should this
+logging_functionality.py : 2024-07-10 20:41:16,521 : Warning : And this, too
+logging_functionality.py : 2024-07-10 20:41:16,521 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-10 20:41:16,521 : Critical: its critical error
+2024-07-10 20:41:53 - DEBUG root: Line: 28 - Debug level - This message should go to the log file
+2024-07-10 20:41:53 - INFO root: Line: 29 - Info : So should this
+2024-07-10 20:41:53 - WARNING root: Line: 30 - Warning : And this, too
+2024-07-10 20:41:53 - ERROR root: Line: 31 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+2024-07-10 20:41:53 - CRITICAL root: Line: 32 - Critical: its critical error
+logging_functionality.py : 2024-07-11 20:43:46,785 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-11 20:43:46,785 : Info : So should this
+logging_functionality.py : 2024-07-11 20:43:46,785 : Warning : And this, too
+logging_functionality.py : 2024-07-11 20:43:46,785 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-11 20:43:46,785 : Critical: its critical error
+logging_functionality.py : 2024-07-11 20:44:03,540 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-11 20:44:03,540 : Info : So should this
+logging_functionality.py : 2024-07-11 20:44:03,540 : Warning : And this, too
+logging_functionality.py : 2024-07-11 20:44:03,540 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-11 20:44:03,540 : Critical: its critical error
+logging_functionality.py : 2024-07-11 20:47:10,769 : Debug level - This message should go to the log file
+logging_functionality.py : 2024-07-11 20:47:10,769 : Info : So should this
+logging_functionality.py : 2024-07-11 20:47:10,769 : Warning : And this, too
+logging_functionality.py : 2024-07-11 20:47:10,769 : Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py : 2024-07-11 20:47:10,769 : Critical: its critical error
+logging_functionality.py - 11-07-2024 20:49:53 - Debug level - This message should go to the log file
+logging_functionality.py - 11-07-2024 20:49:53 - Info : So should this
+logging_functionality.py - 11-07-2024 20:49:53 - Warning : And this, too
+logging_functionality.py - 11-07-2024 20:49:53 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 11-07-2024 20:49:53 - Critical: its critical error
+logging_functionality.py - 11-07-2024 20:50:06 - Debug level - This message should go to the log file
+logging_functionality.py - 11-07-2024 20:50:06 - Info : So should this
+logging_functionality.py - 11-07-2024 20:50:06 - Warning : And this, too
+logging_functionality.py - 11-07-2024 20:50:06 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 11-07-2024 20:50:06 - Critical: its critical error
+logging_functionality.py - 11-07-2024 20:50:43 - Debug level - This message should go to the log file
+logging_functionality.py - 11-07-2024 20:50:43 - Info : So should this
+logging_functionality.py - 11-07-2024 20:50:43 - Warning : And this, too
+logging_functionality.py - 11-07-2024 20:50:43 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 11-07-2024 20:50:43 - Critical: its critical error
+logging_functionality.py - 11-07-2024 20:54:27 - Critical: its critical error
+logging_functionality.py - 11-07-2024 20:54:59 - Critical: its critical error
+logging_functionality.py - 11-07-2024 20:55:32 - Debug level - This message should go to the log file
+logging_functionality.py - 11-07-2024 20:55:32 - Info : So should this
+logging_functionality.py - 11-07-2024 20:55:32 - Warning : And this, too
+logging_functionality.py - 11-07-2024 20:55:32 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 11-07-2024 20:55:32 - Critical: its critical error
+logging_functionality.py - 12-07-2024 10:36:19 - Debug level - This message should go to the log file
+logging_functionality.py - 12-07-2024 10:36:19 - Info : So should this
+logging_functionality.py - 12-07-2024 10:36:19 - Warning : And this, too
+logging_functionality.py - 12-07-2024 10:36:19 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 12-07-2024 10:36:19 - Critical: its critical error
+logging_functionality.py - 12-07-2024 10:36:36 - Debug level - This message should go to the log file
+logging_functionality.py - 12-07-2024 10:36:36 - Info : So should this
+logging_functionality.py - 12-07-2024 10:36:36 - Warning : And this, too
+logging_functionality.py - 12-07-2024 10:36:36 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 12-07-2024 10:36:36 - Critical: its critical error
+logging_functionality.py - 12-07-2024 10:36:50 - Debug level - This message should go to the log file
+logging_functionality.py - 12-07-2024 10:36:50 - Info : So should this
+logging_functionality.py - 12-07-2024 10:36:50 - Warning : And this, too
+logging_functionality.py - 12-07-2024 10:36:50 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 12-07-2024 10:36:50 - Critical: its critical error
+logging_functionality.py - 12-07-2024 10:37:16 - Debug level - This message should go to the log file
+logging_functionality.py - 12-07-2024 10:37:16 - Info : So should this
+logging_functionality.py - 12-07-2024 10:37:16 - Warning : And this, too
+logging_functionality.py - 12-07-2024 10:37:16 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 12-07-2024 10:37:16 - Critical: its critical error
+logging_functionality.py - 12-07-2024 10:40:10 - Debug level - This message should go to the log file
+logging_functionality.py - 12-07-2024 10:40:10 - Info : So should this
+logging_functionality.py - 12-07-2024 10:40:10 - Warning : And this, too
+logging_functionality.py - 12-07-2024 10:40:10 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 12-07-2024 10:40:10 - Critical: its critical error
+logging_functionality.py - 12-07-2024 10:45:01 - Debug level - This message should go to the log file
+logging_functionality.py - 12-07-2024 10:45:01 - Info : So should this
+logging_functionality.py - 12-07-2024 10:45:01 - Warning : And this, too
+logging_functionality.py - 12-07-2024 10:45:01 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 12-07-2024 10:45:01 - Critical: its critical error
+logging_functionality.py - 12-07-2024 10:45:20 - Debug level - This message should go to the log file
+logging_functionality.py - 12-07-2024 10:45:20 - Info : So should this
+logging_functionality.py - 12-07-2024 10:45:20 - Warning : And this, too
+logging_functionality.py - 12-07-2024 10:45:20 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 12-07-2024 10:45:20 - Critical: its critical error
+logging_functionality.py - 12-07-2024 10:46:44 - Debug level - This message should go to the log file
+logging_functionality.py - 12-07-2024 10:46:44 - Info : So should this
+logging_functionality.py - 12-07-2024 10:46:44 - Warning : And this, too
+logging_functionality.py - 12-07-2024 10:46:44 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 12-07-2024 10:46:44 - Critical: its critical error
+logging_functionality.py - 12-07-2024 10:49:13 - Debug level - This message should go to the log file
+logging_functionality.py - 12-07-2024 10:49:13 - Info : So should this
+logging_functionality.py - 12-07-2024 10:49:13 - Warning : And this, too
+logging_functionality.py - 12-07-2024 10:49:13 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 12-07-2024 10:49:13 - Critical: its critical error
+logging_functionality.py - 12-07-2024 10:49:13 - Debug level - This message should go to the log file
+logging_functionality.py - 12-07-2024 10:49:13 - Debug level - This message should go to the log file
+logging_functionality.py - 12-07-2024 10:49:13 - Info : So should this
+logging_functionality.py - 12-07-2024 10:49:13 - Info : So should this
+logging_functionality.py - 12-07-2024 10:49:13 - Warning : And this, too
+logging_functionality.py - 12-07-2024 10:49:13 - Warning : And this, too
+logging_functionality.py - 12-07-2024 10:49:13 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 12-07-2024 10:49:13 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 12-07-2024 10:49:13 - Critical: its critical error
+logging_functionality.py - 12-07-2024 10:49:13 - Critical: its critical error
+logging_functionality.py - 12-07-2024 10:51:07 - Debug level - This message should go to the log file
+logging_functionality.py - 12-07-2024 10:51:07 - Info : So should this
+logging_functionality.py - 12-07-2024 10:51:07 - Warning : And this, too
+logging_functionality.py - 12-07-2024 10:51:07 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 12-07-2024 10:51:07 - Critical: its critical error
+logging_functionality.py - 12-07-2024 10:51:07 - Debug level - This message should go to the log file
+logging_functionality.py - 12-07-2024 10:51:07 - Debug level - This message should go to the log file
+logging_functionality.py - 12-07-2024 10:51:07 - Info : So should this
+logging_functionality.py - 12-07-2024 10:51:07 - Info : So should this
+logging_functionality.py - 12-07-2024 10:51:07 - Warning : And this, too
+logging_functionality.py - 12-07-2024 10:51:07 - Warning : And this, too
+logging_functionality.py - 12-07-2024 10:51:07 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 12-07-2024 10:51:07 - Error : And non-ASCII stuff, too, like Øresund and Malmö
+logging_functionality.py - 12-07-2024 10:51:07 - Critical: its critical error
+logging_functionality.py - 12-07-2024 10:51:07 - Critical: its critical error
+day_one_interview.py - 12-07-2024 10:53:28 - From warning log
+day_one_interview.py - 12-07-2024 10:53:28 - From warning log
+day_one_interview.py - 12-07-2024 10:53:51 - From warning log
+day_one_interview.py - 12-07-2024 10:56:23 - From warning log
+day_one_interview.py - 12-07-2024 10:56:36 - From warning log
+day_one_interview.py - 12-07-2024 19:26:10 - From warning log
+day_one_interview.py - 12-07-2024 19:27:25 - WARNING - From warning log
+day_one_interview.py - 12-07-2024 19:51:36 - WARNING - From warning log
+day_one_interview.py - 12-07-2024 19:51:59 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 10:51:58 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 10:58:07 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 10:58:28 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 11:46:07 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 11:46:49 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 11:48:41 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 12:15:56 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 12:19:09 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 12:19:59 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 12:20:51 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 12:21:08 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 12:21:45 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 17:58:34 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 18:00:45 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 18:01:34 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 18:02:04 - WARNING - From warning log
+day_one_interview.py - 13-07-2024 18:03:20 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 10:06:10 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 10:39:49 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 10:40:43 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 10:40:55 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 10:41:44 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 10:42:20 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 10:42:39 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 10:42:56 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 11:08:31 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 11:14:34 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 11:16:16 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 11:17:35 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 11:22:44 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 11:23:39 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 11:44:58 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 11:47:47 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 11:55:58 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 12:00:02 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 12:02:00 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 12:05:40 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 12:18:08 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 12:26:04 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 12:29:19 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 12:57:09 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 13:09:01 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 13:48:27 - WARNING - From warning log
+day_one_interview.py - 14-07-2024 13:48:44 - WARNING - From warning log
+day_one_interview.py - 15-07-2024 13:11:57 - WARNING - From warning log
