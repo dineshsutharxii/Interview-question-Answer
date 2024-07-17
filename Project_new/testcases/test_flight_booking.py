@@ -24,6 +24,7 @@ class TestSearchFlightAndVerifyResults:
         search_result.page_scroll()
         search_result.filter_by_stop(1)
 
+
     def test_search_flight_1(self):
         fs = FlightSearchPage(self.driver, self.wait)
         search_result = FlightSearchResultPage(self.driver, self.wait)
@@ -34,7 +35,7 @@ class TestSearchFlightAndVerifyResults:
         time.sleep(5)
         search_result.page_scroll()
         search_result.filter_by_stop(1)
-        allStops = self.wait.until()
+
 
 #
 # # Setup

@@ -13,6 +13,7 @@ class FlightSearchResultPage(BasePage):
 
         # Locator
         self.select_stops = lambda stop: (By.XPATH, "//p[normalize-space()='" + str(stop) + "']")
+        self.stop = (By.XPATH, "//span[contains(text(),'Non Stop') or contains(text(),'1 Stop') or contains(text(),'2 Stop')]")
 
     def filter_by_stop(self, stop):
         print(self.select_stops(stop))
@@ -20,4 +21,7 @@ class FlightSearchResultPage(BasePage):
         stops.click()
         time.sleep(2)
 
+    def get_search_flight_results(self):
+        search_result = self.wait.until(EC.presence_of_all_elements_located(self.stop))
+        return search_result
 
