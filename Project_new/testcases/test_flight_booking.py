@@ -8,17 +8,33 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 import pytest
 from Project_new.pages.flight_search_page import FlightSearchPage
+from Project_new.pages.flight_search_result_page import FlightSearchResultPage
 
 
 @pytest.mark.usefixtures("setup")
 class TestSearchFlightAndVerifyResults:
     def test_search_flight(self):
         fs = FlightSearchPage(self.driver, self.wait)
+        search_result = FlightSearchResultPage(self.driver, self.wait)
         fs.enter_from_location("BOM")
         fs.enter_to_location("Bangalore")
         fs.select_date_departure("17/08/2024")
         fs.click_search()
-        time.sleep(2)
+        time.sleep(5)
+        search_result.page_scroll()
+        search_result.filter_by_stop(1)
+
+    def test_search_flight_1(self):
+        fs = FlightSearchPage(self.driver, self.wait)
+        search_result = FlightSearchResultPage(self.driver, self.wait)
+        fs.enter_from_location("MEL")
+        fs.enter_to_location("Bangalore")
+        fs.select_date_departure("17/08/2024")
+        fs.click_search()
+        time.sleep(5)
+        search_result.page_scroll()
+        search_result.filter_by_stop(1)
+        allStops = self.wait.until()
 
 #
 # # Setup

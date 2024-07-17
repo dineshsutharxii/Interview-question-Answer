@@ -13,6 +13,7 @@ from Project_new.base.BasePage import BasePage
 
 class FlightSearchPage(BasePage):
     def __init__(self, driver, wait):
+        super().__init__(driver)
         self.driver = driver
         self.wait = wait
 
@@ -41,25 +42,25 @@ class FlightSearchPage(BasePage):
 
     # Methods below this only
     def enter_from_location(self, from_location):
-        self.driver.implicitly_wait(2)
+        time.sleep(2)
         from_loc = self.wait.until(EC.element_to_be_clickable(self.depart_city_xpath))
         from_loc.click()
-        self.driver.implicitly_wait(1)
+        time.sleep(1)
         from_loc.send_keys(from_location)
-        self.driver.implicitly_wait(1)
+        time.sleep(1)
         select_depart_loc = self.wait.until(EC.element_to_be_clickable(self.select_city_from_suggestion))
-        self.driver.implicitly_wait(1)
+        time.sleep(1)
         select_depart_loc.click()
 
     def enter_to_location(self, to_location):
-        self.driver.implicitly_wait(1)
+        time.sleep(1)
         to_loc = self.wait.until(EC.element_to_be_clickable(self.to_city_xpath))
         to_loc.click()
-        self.driver.implicitly_wait(1)
+        time.sleep(1)
         to_loc.send_keys(to_location)
-        self.driver.implicitly_wait(1)
+        time.sleep(1)
         select_depart_loc = self.wait.until(EC.element_to_be_clickable(self.select_city_from_suggestion))
-        self.driver.implicitly_wait(1)
+        time.sleep(1)
         select_depart_loc.click()
 
     def select_date_departure(self, date):
