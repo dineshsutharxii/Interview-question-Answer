@@ -15,5 +15,5 @@ class BasePage:
             pageLength = self.driver.execute_script(
                 "window.scrollTo(0, document.body.scrollHeight);var pageLength=document.body.scrollHeight;return pageLength;")
             if lastCount == pageLength:
-                match = False
+                match = True
         time.sleep(4)

@@ -9,6 +9,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import pytest
 from Project_new.pages.flight_search_page import FlightSearchPage
 from Project_new.pages.flight_search_result_page import FlightSearchResultPage
+from Project_new.utilities.Utility import Utility
 
 
 @pytest.mark.usefixtures("setup")
@@ -16,6 +17,7 @@ class TestSearchFlightAndVerifyResults:
     def test_search_flight(self):
         fs = FlightSearchPage(self.driver, self.wait)
         search_result = FlightSearchResultPage(self.driver, self.wait)
+        ut = Utility()
         fs.enter_from_location("BOM")
         fs.enter_to_location("Bangalore")
         fs.select_date_departure("17/08/2024")
@@ -23,6 +25,11 @@ class TestSearchFlightAndVerifyResults:
         time.sleep(5)
         search_result.page_scroll()
         search_result.filter_by_stop(1)
+        flights_with_one_stop = search_result.get_search_flight_results()
+        for ele in flights_with_one_stop:
+            print(ele.text)
+        print(len(flights_with_one_stop))
+        ut.assertListItemText(flights_with_one_stop, 1)
 
 
     def test_search_flight_1(self):

@@ -1,8 +1,8 @@
 import logging
 import openpyxl
+import softest
 
-
-class Utility:
+class Utility(softest.TestCase):
 
     def read_excel(self, filename, sheet):
         workbook = openpyxl.load_workbook(filename)
@@ -35,3 +35,13 @@ class Utility:
         logger.addHandler(console_handler)  # added handler to logger
         logger.addHandler(file_handler)  # added handler to logger
         return logger
+
+    def assertListItemText(self, list1, value):
+        for stop in list1:
+            print("The text is: " + stop.text)
+            self.soft_assert(self.assertIn, value, stop.text)
+            if stop.text == value:
+                print("test passed")
+            else:
+                print("test failed")
+        self.assert_all()
