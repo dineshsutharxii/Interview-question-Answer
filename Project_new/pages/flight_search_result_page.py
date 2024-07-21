@@ -22,6 +22,6 @@ class FlightSearchResultPage(BasePage):
         time.sleep(2)
 
     def get_search_flight_results(self):
-        search_result = self.wait.until(EC.presence_of_all_elements_located(self.stop))
+        search_result = self.wait.until(EC.presence_of_all_elements_located())
         return search_result
 
