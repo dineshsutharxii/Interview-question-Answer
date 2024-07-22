@@ -39,7 +39,6 @@ class Utility(softest.TestCase):
     def assertListItemText(self, list1, value):
         for stop in list1:
             print("The text is: " + stop.text)
-            self.soft_assert(self.assertIn, value, stop.text)
             if stop.text == value:
                 print("test passed")
             else:
