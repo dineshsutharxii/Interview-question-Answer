@@ -17,7 +17,7 @@ def setup(request):
     # chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
     service_obj = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(options=chrome_options, service=service_obj)
-    wait = WebDriverWait(driver, 5)
+    wait = WebDriverWait(driver, 10)
     # driver.get("https://www.yatra.com/")
     driver.get("https://demo.softneta.com/search.html")
     # driver.maximize_window()
