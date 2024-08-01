@@ -17,7 +17,7 @@ def setup(request):
     # chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
     service_obj = Service(ChromeDriverManager().install())
     service_obj = Service(r'C:\Users\dines\.wdm\drivers\chromedriver\win64\driver\chromedriver-win32\chromedriver.exe')
-
+    lo
     driver = webdriver.Chrome(options=chrome_options, service=service_obj)
     wait = WebDriverWait(driver, 10)
     driver.get("https://www.yatra.com/")
